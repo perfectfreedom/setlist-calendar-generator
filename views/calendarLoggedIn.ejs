@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>myCalendar</title>
+</head>
+<body>
+    <a href="/logout">Logout</a>
+    <table>
+
+        <form action="/fetchUser" method="POST">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Setlist.fm username: </label
+              >
+              <input
+                type="text"
+                name="setlistfmusername"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+<!---        <% if (user) { %>
+            <span class="testclass">test button</a>
+        <% } %>-->
+
+        <tr>
+            <th>January</th>
+            <th>February</th>
+            <th>March</th>
+            <th>April</th>
+            <th>May</th>
+            <th>June</th>
+            <th>July</th>
+            <th>August</th>
+            <th>September</th>
+            <th>October</th>
+            <th>November</th>
+            <th>December</th>
+        </tr>
+
+        <tr class="d01">
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+
+        <tr class="d02">
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+
+        <tr class="d03">
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+
+        <tr class="d04">
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+        </tr>
+
+        <tr class="d05">
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+        </tr>
+
+        <tr class="d06">
+            <td>6</td>
+            <td>6</td>
+            <td>6</td>
+            <td>6</td>
+            <td>6</td>
+            <td>6</td>
+            <td>6</td>
+            <td>6</td>
+            <td>6</td>
+            <td>6</td>
+            <td>6</td>
+            <td>6</td>
+        </tr>
+
+        <tr class="d07">
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+        </tr>
+
+        <tr class="d08">
+            <td>8</td>
+            <td>8</td>
+            <td>8</td>
+            <td>8</td>
+            <td>8</td>
+            <td>8</td>
+            <td>8</td>
+            <td>8</td>
+            <td>8</td>
+            <td>8</td>
+            <td>8</td>
+            <td>8</td>
+        </tr>
+
+        <tr class="d09">
+            <td>9</td>
+            <td>9</td>
+            <td>9</td>
+            <td>9</td>
+            <td>9</td>
+            <td>9</td>
+            <td>9</td>
+            <td>9</td>
+            <td>9</td>
+            <td>9</td>
+            <td>9</td>
+            <td>9</td>
+        </tr>
+
+        <tr class="d10">
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+
+        <tr class="d11">
+            <td>11</td>
+            <td>11</td>
+            <td>11</td>
+            <td>11</td>
+            <td>11</td>
+            <td>11</td>
+            <td>11</td>
+            <td>11</td>
+            <td>11</td>
+            <td>11</td>
+            <td>11</td>
+            <td>11</td>
+        </tr>
+
+        <tr class="d12">
+            <td>12</td>
+            <td>12</td>
+            <td>12</td>
+            <td>12</td>
+            <td>12</td>
+            <td>12</td>
+            <td>12</td>
+            <td>12</td>
+            <td>12</td>
+            <td>12</td>
+            <td>12</td>
+            <td>12</td>
+        </tr>
+
+        <tr class="d13">
+            <td>13</td>
+            <td>13</td>
+            <td>13</td>
+            <td>13</td>
+            <td>13</td>
+            <td>13</td>
+            <td>13</td>
+            <td>13</td>
+            <td>13</td>
+            <td>13</td>
+            <td>13</td>
+            <td>13</td>
+        </tr>
+
+        <tr class="d14">
+            <td>14</td>
+            <td>14</td>
+            <td>14</td>
+            <td>14</td>
+            <td>14</td>
+            <td>14</td>
+            <td>14</td>
+            <td>14</td>
+            <td>14</td>
+            <td>14</td>
+            <td>14</td>
+            <td>14</td>
+        </tr>
+
+        <tr class="d15">
+            <td>15</td>
+            <td>15</td>
+            <td>15</td>
+            <td>15</td>
+            <td>15</td>
+            <td>15</td>
+            <td>15</td>
+            <td>15</td>
+            <td>15</td>
+            <td>15</td>
+            <td>15</td>
+            <td>15</td>
+        </tr>
+
+        <tr class="d16">
+            <td>16</td>
+            <td>16</td>
+            <td>16</td>
+            <td>16</td>
+            <td>16</td>
+            <td>16</td>
+            <td>16</td>
+            <td>16</td>
+            <td>16</td>
+            <td>16</td>
+            <td>16</td>
+            <td>16</td>
+        </tr>
+
+        <tr class="d17">
+            <td>17</td>
+            <td>17</td>
+            <td>17</td>
+            <td>17</td>
+            <td>17</td>
+            <td>17</td>
+            <td>17</td>
+            <td>17</td>
+            <td>17</td>
+            <td>17</td>
+            <td>17</td>
+            <td>17</td>
+        </tr>
+
+        <tr class="d18">
+            <td>18</td>
+            <td>18</td>
+            <td>18</td>
+            <td>18</td>
+            <td>18</td>
+            <td>18</td>
+            <td>18</td>
+            <td>18</td>
+            <td>18</td>
+            <td>18</td>
+            <td>18</td>
+            <td>18</td>
+        </tr>
+
+        <tr class="d19">
+            <td>19</td>
+            <td>19</td>
+            <td>19</td>
+            <td>19</td>
+            <td>19</td>
+            <td>19</td>
+            <td>19</td>
+            <td>19</td>
+            <td>19</td>
+            <td>19</td>
+            <td>19</td>
+            <td>19</td>
+        </tr>
+
+        <tr class="d20">
+            <td>20</td>
+            <td>20</td>
+            <td>20</td>
+            <td>20</td>
+            <td>20</td>
+            <td>20</td>
+            <td>20</td>
+            <td>20</td>
+            <td>20</td>
+            <td>20</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+
+        <tr class="d21">
+            <td>21</td>
+            <td>21</td>
+            <td>21</td>
+            <td>21</td>
+            <td>21</td>
+            <td>21</td>
+            <td>21</td>
+            <td>21</td>
+            <td>21</td>
+            <td>21</td>
+            <td>21</td>
+            <td>21</td>
+        </tr>
+
+        <tr class="d22">
+            <td>22</td>
+            <td>22</td>
+            <td>22</td>
+            <td>22</td>
+            <td>22</td>
+            <td>22</td>
+            <td>22</td>
+            <td>22</td>
+            <td>22</td>
+            <td>22</td>
+            <td>22</td>
+            <td>22</td>
+        </tr>
+
+        <tr class="d23">
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+        </tr>
+
+        <tr class="d24">
+            <td>24</td>
+            <td>24</td>
+            <td>24</td>
+            <td>24</td>
+            <td>24</td>
+            <td>24</td>
+            <td>24</td>
+            <td>24</td>
+            <td>24</td>
+            <td>24</td>
+            <td>24</td>
+            <td>24</td>
+        </tr>
+
+        <tr class="d25">
+            <td>25</td>
+            <td>25</td>
+            <td>25</td>
+            <td>25</td>
+            <td>25</td>
+            <td>25</td>
+            <td>25</td>
+            <td>25</td>
+            <td>25</td>
+            <td>25</td>
+            <td>25</td>
+            <td>25</td>
+        </tr>
+
+        <tr class="d26">
+            <td>26</td>
+            <td>26</td>
+            <td>26</td>
+            <td>26</td>
+            <td>26</td>
+            <td>26</td>
+            <td>26</td>
+            <td>26</td>
+            <td>26</td>
+            <td>26</td>
+            <td>26</td>
+            <td>26</td>
+        </tr>
+
+        <tr class="d27">
+            <td>27</td>
+            <td>27</td>
+            <td>27</td>
+            <td>27</td>
+            <td>27</td>
+            <td>27</td>
+            <td>27</td>
+            <td>27</td>
+            <td>27</td>
+            <td>27</td>
+            <td>27</td>
+            <td>27</td>
+        </tr>
+
+        <tr class="d28">
+            <td>28</td>
+            <td>28</td>
+            <td>28</td>
+            <td>28</td>
+            <td>28</td>
+            <td>28</td>
+            <td>28</td>
+            <td>28</td>
+            <td>28</td>
+            <td>28</td>
+            <td>28</td>
+            <td>28</td>
+        </tr>
+
+        <tr class="d29">
+            <td>29</td>
+            <td>29</td>
+            <td>29</td>
+            <td>29</td>
+            <td>29</td>
+            <td>29</td>
+            <td>29</td>
+            <td>29</td>
+            <td>29</td>
+            <td>29</td>
+            <td>29</td>
+            <td>29</td>
+        </tr>
+
+        <tr class="d30">
+            <td>30</td>
+            <td></td>
+            <td>30</td>
+            <td>30</td>
+            <td>30</td>
+            <td>30</td>
+            <td>30</td>
+            <td>30</td>
+            <td>30</td>
+            <td>30</td>
+            <td>30</td>
+            <td>30</td>
+        </tr>
+
+        <tr class="d31">
+            <td>31</td>
+            <td></td>
+            <td>31</td>
+            <td></td>
+            <td>31</td>
+            <td></td>
+            <td>31</td>
+            <td>31</td>
+            <td></td>
+            <td>31</td>
+            <td></td>
+            <td>31</td>
+        </tr>
+
+
+
+
+
+    </table>
+
+    <script src="/scripts/script.js"></script>
+
+
+</body>
+</html>
